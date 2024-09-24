@@ -1,18 +1,18 @@
 
- /* General body styling */
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
-/* Navigation bar styling */
+
 nav {
-  position: fixed; /* Keeps the navbar fixed at the top */
+  position: fixed; 
   top: 0;
   width: 100%;
   background-color: #BEADFA;
   padding: 10px 0;
-  z-index: 1000; /* Ensures the navbar is above other elements */
+  z-index: 1000;
 }
 nav ul {
   list-style: none;
@@ -39,34 +39,34 @@ nav ul .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height of the viewport */
-}
-/* Styles for the rounded search box */
-nav ul .search-box {
-  width: 120px; /* Adjust width as needed */
-  height: 10px;
-  padding: 10px 20px; /* Adjust padding for desired height */
-  border: 2px solid #ccc; /* Border color and width */
-  border-radius: 25px; /* Controls the roundness */
-  outline: none; /* Removes default outline on focus */
-  font-size: 16px; /* Adjust font size */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
-  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
-}
-/* Focus and hover effect */
-nav ul .search-box:focus {
-  border-color: #4A90E2; /* Change border color on focus */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on focus */
+  height: 100vh;
 }
 
-/* Section styling */
+nav ul .search-box {
+  width: 120px;
+  height: 10px;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none; 
+  font-size: 16px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+nav ul .search-box:focus {
+  border-color: #4A90E2; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 section {
   padding: 100px 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-/* Different background colors for each section */
+
 
 #about {
     background-color: #8E8FFA;
@@ -76,16 +76,12 @@ section {
 #about h1 {
     font-size: xx-large;
     color : black;
-
-    /* About Us */
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 800;
 font-size: 54px;
 line-height: 81px;
 text-align: center;
-
-
 }
 
 #about h3 {
@@ -123,13 +119,13 @@ color: #000000;
 }
 
 
-#services {
-  background-color: black; /* Even darker gray */
+#shop {
+  background-color: black;
   color: white;
   height: 157px;
 }
 
-#services h1 {
+#shop h1 {
     font-size: xx-large;
 }
 
@@ -144,26 +140,26 @@ color: #000000;
 
 #contact .image-container {
     display: flex;
-    justify-content: space-between; /* Space between images */
+    justify-content: space-between;
     align-items: center;
-    margin: 50px; /* Adjust this as needed */
+    margin: 50px; 
 }
-/* Individual image styling */
+
 #contact .image-box {
-  width: 400px; /* Fixed width */
-  height: 400px; /* Fixed height */
+  width: 400px; 
+  height: 400px; 
   background-color: white;
-  border-radius: 20px; /* Rounded corners */
-  overflow: hidden; /* Ensures image fits within the rounded border */
-  margin: 0 10px; /* Space between the images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for a 3D effect */
+  border-radius: 20px; 
+  overflow: hidden; 
+  margin: 0 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #contact .image-box img {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 158px;
   height: 158px;
-  object-fit: cover; /* Ensures the image fits the container without distortion */
+  object-fit: cover; 
 }
 
 #contact .image-box p {
