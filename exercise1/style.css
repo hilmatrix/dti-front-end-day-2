@@ -186,9 +186,65 @@ color: #000000;
 }
 
 #woman {
-    height: 100px;
-    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    height: 700;
 }
+
+#woman .left {
+    flex-basis: 33%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#woman .left .up {
+    flex: 0 0 70%;
+}
+
+#woman .left .down {
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%; 
+}
+
+#woman .left .down  button {
+    width: 200px;
+    height: 50px;
+    background-color: #00000000;
+    text-align: center;    
+}
+
+#woman .left .down .title {
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+#woman .left .down p {
+width: 50%;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+color: #000000;
+
+
+}
+
+#woman .right {
+    height: 100%;
+    flex-basis: 67%;
+
+    text-align: center;
+}
+
 
 #man {
     height: 100px;
