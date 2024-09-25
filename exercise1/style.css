@@ -1,172 +1,206 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-/* font-family: 'Mulish', sans-serif;
-font-family: 'Open Sans', sans-serif; */
-
 body {
-  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    background-color: #F4F5F7;
 
-  min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-.page {
-  width: 1040px;
-  margin: 0px auto;
-  padding-top: 64px;
+header {
+    height: 50px;
+    background-color: #C4C4C4;
 }
 
-/* Check margin */
-nav {
-  font-family: 'Mulish', sans-serif;
-  color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .split {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100%;
 }
 
-/* Check list styling */
-nav ul {
-  display: flex;
-  gap: 48px;
-  list-style-type: none;
+header .left {
+    flex-basis: 33%; 
+    height: 100%;
 }
 
-/* Check list link style */
-nav ul li a {
-    text-decoration: none;
+header .center {
+    flex-basis: 34%; 
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    text-decoration: underline;  
 }
 
-nav ul li a:visited {
-  color: black; /* Visited link */
-  text-decoration: none;
+header .right {
+    flex-basis: 33%; 
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
-/* Make text bold on hover */
-nav ul li a:hover {
-  color: black; /* Mouse over link */
-  text-decoration: none; /* Optional: adds underline on hover */
-  font-weight: bold;
+header .right .login {
+    flex-basis: 50%; 
+    height: 100%;
+
+    display: flex;
+    justify-content: right;
+    align-items: center; 
 }
 
-nav ul li a:active {
-  color: black; /* Active (clicked) link */
-  text-decoration: none;
+header .right .bag {
+    flex-basis: 50%; 
+    height: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center; 
 }
 
+header .right img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 
 main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 88px;
+    width: 90%;
+    margin: 0 auto; 
 }
 
-main h1 {
-  /* workouts made exclusive for you! */
+#title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 150%;
-/* or 72px */
-text-transform: uppercase;
+#title h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+#navigation {
+    height: 100px;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+#navigation nav ul {
+  display: flex;    
+  list-style: none;   
+  justify-content: space-between; 
+
+  align-items: center;  
+  padding: 0;           
+  margin: 0; 
+}
+
+#navigation nav ul a {
+    text-decoration: none;  
+    color: inherit;    
+}
+
+#navigation nav ul li {
+    margin-right: 20px;  
+}
+
+#jumbotron {
+    text-align: center; 
+}
+
+#jumbotron-info {
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#jumbotron-info button{
+    width: 224px;
+    background-color: #00000000;
+}
+
+#jumbotron-info h2 {
+    /* SUMMER 2021 */
+
+    font-family: 'Modern No. 20', sans-serif;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
 
 color: #000000;
 
-mix-blend-mode: normal;
-
-margin-top: 20px;
-margin-bottom: 20px;
 }
 
-main h1 span {
-  color: rgba(137, 197, 204, 1);
+#arrivals {
+    height: 600px;
+    display: flex;    
+    list-style: none;   
+    justify-content: space-between; 
 }
 
-main p {
-  /* We create exclusive and unique workouts for you. Invest in your body and get much more performance and quality of life. */
+#arrivals .left {
+    height: 100%;
+    flex-basis: 33%;
 
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-/* or 26px */
-
-color: #7D7987;
-
-mix-blend-mode: normal;
-
-margin-top: 20px;
-margin-bottom: 40px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
 }
 
-main button {
-  /* Button / Primary */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 14px 32px 15px;
-gap: 8px;
-
-/* Primary color
-
-Green
-*/
-background: #69B99D;
-border-radius: 4px;
+#arrivals .color {
+    width: 100%;
+    margin-top : 10px;
+    margin-left : 100px;
+    color : #848484;
 
 }
 
-/* Check margin and font styling */
-.text h1 {
-  font-family: 'Mulish', sans-serif;
+#arrivals .title {
+    width: 100%;
+    margin-top : 10px;
+    margin-left : 100px;
 }
 
-/* Check font styling */
-.text h1 span {
+#arrivals .center {
+    height: 100%;
+    flex-basis: 33%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
 }
 
-/* Check font styling */
-.text p {
-  font-family: 'Open Sans', sans-serif; 
+#arrivals .right {
+    height: 100%;
+    flex-basis: 33%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
 }
 
-/* Check font styling and make sure the button is rounded */
-.text button {
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  gap: 8px;
+#woman {
+    height: 100px;
+    background-color: lightsalmon;
 }
 
-/* Handle when user hover on the button */
-.text button:hover {
+#man {
+    height: 100px;
+    background-color: lightgreen;
 }
 
-/* Check the text styling */
+#sale {
+    height: 100px;
+    background-color: lightskyblue;
+}
+
 footer {
-  font-family: 'Open Sans', sans-serif; 
-  text-align: center;
+    height: 100px;
+    background-color: lightgreen;
 }
-
-/* Check the text styling */
-footer a {
-  color: #000;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-#balls {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-}
-
