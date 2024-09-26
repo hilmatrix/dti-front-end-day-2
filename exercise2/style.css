@@ -166,7 +166,6 @@ margin: 40px;
  }
 
  #categories {
-    height: 600px;
  }
 
  #categories nav ul {
@@ -189,9 +188,10 @@ margin: 40px;
 }
 
 
-
- #submitted .title{
+ #submitted .title {
     height: 50px;
+
+    font-size: xx-large;
  }
 
  .article {
@@ -212,8 +212,31 @@ margin: 40px;
  .article .description {
  }
 
+ #ending {
+    height: 100px;
+    background-color: #EDECFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+ }
+
  #footer {
     height: 100px;
+ }
+
+ #footer table {
+    table-layout: fixed;
+    width: 100%;
+ }
+
+ #footer nav ul {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
  }
 
  .works {
